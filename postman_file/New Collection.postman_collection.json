@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "c7e1b1fa-22f3-4c0d-9316-453634556b5c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "students",
+			"item": [
+				{
+					"name": "add_students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"prasanna\",\r\n    \"rollno\":\"123\",\r\n    \"email\":\"prasanna@yopmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"current_standard\":\"3\",\r\n    \"preview_remark\":[{\r\n            \"standard\":\"1\",\r\n            \"remark\":\"pass\",\r\n            \"percentage\":\"70\"\r\n        },\r\n        {\r\n            \"standard\":\"2\",\r\n            \"remark\":\"pass\",\r\n            \"percentage\":\"80\"\r\n        }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"prasanna1@yopmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4010/api/student/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4010",
+							"path": [
+								"api",
+								"student",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_preview_standard_details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_student_details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "add_random_value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "get_random_value",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
